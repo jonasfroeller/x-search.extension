@@ -1,6 +1,23 @@
 # X Search
 
-Browser extension that lets you full-text search anyone's X (Twitter) posts. X's built-in search is unreliable and limited. This fixes that by indexing posts locally in your browser.
+<div align="center">
+    <img src="./assets/icon.png" alt="icon" width="150" />
+</div>
+
+<div align="center">
+    <span style="font-size: 2.5rem;">
+      <b><strong style="font-size: 5rem;">X Search</strong></b>
+      <br>"Browser extension that lets you full-text search anyone's X (Twitter) posts. X's built-in search is unreliable and limited. This fixes that by indexing posts locally in your browser."
+    </span>
+</div>
+
+<br />
+
+<div align="center">
+  <img src="./assets/screenshot.png" alt="screenshot" />
+</div>
+
+<br />
 
 ## How it works
 
