@@ -1,3 +1,4 @@
+import iconUrl from "url:~assets/icon.png"
 import { useState, useEffect, useCallback } from "react"
 import { IconBolt, IconPlayerPause, IconPlayerPlay, IconPlayerStop, IconRefresh, IconArrowLeft, IconSearch, IconHeart, IconEye, IconTrash, IconAlertTriangle } from "@tabler/icons-react"
 import type { Profile } from "~lib/db"
@@ -158,8 +159,8 @@ export default function Popup() {
   return (
     <div className="popup">
       <div className="popup-header">
-        <div className="popup-logo">X</div>
-        <span className="popup-title">X Search</span>
+        <img src={iconUrl} alt="X Search" className="popup-logo" />
+        <span className="popup-title">Search</span>
         {view !== "home" && (
           <button className="popup-back" onClick={() => { setView("home"); setActiveProfile(null); setQuery(""); setResults([]) }}>
             <IconArrowLeft size={14} /> Back
