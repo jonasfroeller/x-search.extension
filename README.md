@@ -15,7 +15,9 @@
 <br />
 
 <div align="center">
-  <img src="./assets/screenshot.png" alt="screenshot" />
+  <img src="./assets/screenshot.png" alt="screenshot" width="30%" />
+  <img src="./assets/screenshot-detail.png" alt="screenshot-detail" width="30%" />
+  <img src="./assets/screenshot-search.png" alt="screenshot-search" width="30%" />
 </div>
 
 <br />
