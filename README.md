@@ -1,33 +1,43 @@
-This is a [Plasmo extension](https://docs.plasmo.com/) project bootstrapped with [`plasmo init`](https://www.npmjs.com/package/plasmo).
+# X Search
 
-## Getting Started
+Browser extension that lets you full-text search anyone's X (Twitter) posts. X's built-in search is unreliable and limited. This fixes that by indexing posts locally in your browser.
 
-First, run the development server:
+## How it works
 
-```bash
+1. Visit any X profile
+2. Click "Index" in the extension popup to scroll through and capture all posts
+3. Search across all indexed profiles or within a single profile
+
+Posts are stored locally in IndexedDB using Dexie.js. Nothing leaves your browser.
+
+## Features
+
+- Full-text search across all indexed profiles
+- Per-profile search with result highlighting
+- Profile management (view indexed count, delete profiles)
+- Pause/resume/re-index controls
+- Works with X's virtual DOM and lazy-loaded content
+
+## Stack
+
+- [Plasmo](https://docs.plasmo.com/) (browser extension framework)
+- React + TypeScript
+- Dexie.js (IndexedDB wrapper)
+- [@tabler/icons-react](https://tabler.io/icons)
+
+## Development
+
+```sh
+pnpm install
 pnpm dev
-# or
-npm run dev
 ```
 
-Open your browser and load the appropriate development build. For example, if you are developing for the chrome browser, using manifest v3, use: `build/chrome-mv3-dev`.
+Load `build/chrome-mv3-dev` as an unpacked extension in Chrome.
 
-You can start editing the popup by modifying `popup.tsx`. It should auto-update as you make changes. To add an options page, simply add a `options.tsx` file to the root of the project, with a react component default exported. Likewise to add a content page, add a `content.ts` file to the root of the project, importing some module and do some logic, then reload the extension on your browser.
+## Production build
 
-For further guidance, [visit our Documentation](https://docs.plasmo.com/)
-
-## Making production build
-
-Run the following:
-
-```bash
+```sh
 pnpm build
-# or
-npm run build
 ```
 
-This should create a production bundle for your extension, ready to be zipped and published to the stores.
-
-## Submit to the webstores
-
-The easiest way to deploy your Plasmo extension is to use the built-in [bpp](https://bpp.browser.market) GitHub action. Prior to using this action however, make sure to build your extension and upload the first version to the store to establish the basic credentials. Then, simply follow [this setup instruction](https://docs.plasmo.com/framework/workflows/submit) and you should be on your way for automated submission!
+Output is in `build/chrome-mv3-prod`.
