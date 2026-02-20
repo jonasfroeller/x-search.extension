@@ -7,7 +7,8 @@
 <div align="center">
     <span style="font-size: 2.5rem;">
       <b><strong style="font-size: 5rem;">X Search</strong></b>
-      <br>"Browser extension that lets you full-text search anyone's X (Twitter) posts. X's built-in search is unreliable and limited. This fixes that by indexing posts locally in your browser."
+      <br>"Browser extension that lets you full-text search anyone's X (Twitter) posts.<br>
+      X's built-in search is unreliable and limited. This fixes that by indexing posts locally in your browser."
     </span>
 </div>
 
